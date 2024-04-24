@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Milk",
+    "price": 2.49,
+    "supplier": "Fresh Farms Dairy",
+    "date_added": "2024-04-24",
+    "sku": "GROC001",
+    "delivery_id": "DEL001"
+  },
+  {
+    "name": "Bread",
+    "price": 1.99,
+    "supplier": "Baker's Best",
+    "date_added": "2024-04-24",
+    "sku": "GROC002",
+    "delivery_id": "DEL001"
+  },
+  {
+    "name": "Eggs",
+    "price": 3.29,
+    "supplier": "Organic Farms",
+    "date_added": "2024-04-24",
+    "sku": "GROC003",
+    "delivery_id": "DEL002"
+  },
+  {
+    "name": "Apples",
+    "price": 0.79,
+    "supplier": "Orchard Fresh",
+    "date_added": "2024-04-24",
+    "sku": "GROC004",
+    "delivery_id": "DEL002"
+  },
+  {
+    "name": "Bananas",
+    "price": 0.59,
+    "supplier": "Tropical Fruits Inc.",
+    "date_added": "2024-04-24",
+    "sku": "GROC005",
+    "delivery_id": "DEL003"
+  },
+  {
+    "name": "Rice",
+    "price": 4.99,
+    "supplier": "Golden Grains",
+    "date_added": "2024-04-24",
+    "sku": "GROC006",
+    "delivery_id": "DEL003"
+  },
+  {
+    "name": "Chicken Breast",
+    "price": 6.99,
+    "supplier": "Farm Fresh Meats",
+    "date_added": "2024-04-24",
+    "sku": "GROC007",
+    "delivery_id": "DEL004"
+  },
+  {
+    "name": "Potatoes",
+    "price": 2.49,
+    "supplier": "Farming Co-op",
+    "date_added": "2024-04-24",
+    "sku": "GROC008",
+    "delivery_id": "DEL004"
+  },
+  {
+    "name": "Tomatoes",
+    "price": 1.99,
+    "supplier": "Vineyard Produce",
+    "date_added": "2024-04-24",
+    "sku": "GROC009",
+    "delivery_id": "DEL005"
+  },
+  {
+    "name": "Pasta",
+    "price": 1.49,
+    "supplier": "Italian Imports Ltd.",
+    "date_added": "2024-04-24",
+    "sku": "GROC010",
+    "delivery_id": "DEL005"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "SUP001",
+    "name": "Fresh Farms Dairy",
+    "contact_no": "+1234567890",
+    "email": "info@freshfarmsdairy.com",
+    "address": "123 Dairy Lane, Cityville, State, Country"
+  },
+  {
+    "_id": "SUP002",
+    "name": "Baker's Best",
+    "contact_no": "+1987654321",
+    "email": "orders@bakersbest.com",
+    "address": "456 Baker Street, Townsville, State, Country"
+  },
+  {
+    "_id": "SUP003",
+    "name": "Organic Farms",
+    "contact_no": "+1122334455",
+    "email": "info@organicfarms.com",
+    "address": "789 Organic Road, Farmville, State, Country"
+  },
+  {
+    "_id": "SUP004",
+    "name": "Orchard Fresh",
+    "contact_no": "+1555666777",
+    "email": "sales@orchardfresh.com",
+    "address": "101 Apple Avenue, Orchard Town, State, Country"
+  },
+  {
+    "_id": "SUP005",
+    "name": "Tropical Fruits Inc.",
+    "contact_no": "+1444333222",
+    "email": "info@tropicalfruits.com",
+    "address": "555 Banana Boulevard, Tropic City, State, Country"
+  },
+  {
+    "_id": "SUP006",
+    "name": "Golden Grains",
+    "contact_no": "+1999888777",
+    "email": "info@goldengrains.com",
+    "address": "777 Rice Road, Grainville, State, Country"
+  },
+  {
+    "_id": "SUP007",
+    "name": "Farm Fresh Meats",
+    "contact_no": "+1777888999",
+    "email": "orders@farmfreshmeats.com",
+    "address": "888 Farm Road, Meatville, State, Country"
+  },
+  {
+    "_id": "SUP008",
+    "name": "Farming Co-op",
+    "contact_no": "+1666777888",
+    "email": "info@farmingcoop.com",
+    "address": "999 Potato Lane, Farmtown, State, Country"
+  },
+  {
+    "_id": "SUP009",
+    "name": "Vineyard Produce",
+    "contact_no": "+1888999000",
+    "email": "sales@vineyardproduce.com",
+    "address": "222 Tomato Street, Vinetown, State, Country"
+  },
+  {
+    "_id": "SUP010",
+    "name": "Italian Imports Ltd.",
+    "contact_no": "+1777888999",
+    "email": "info@italianimports.com",
+    "address": "333 Pasta Place, Italycity, State, Country"
+  }
+]
