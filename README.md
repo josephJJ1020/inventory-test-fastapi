@@ -1,4 +1,5 @@
 # Inventory Backend Sample using FastAPI
+Simple demonstration of an inventory management system backend with JWT authentication and ABAC.
 
 ### Activate virtual env
 Run `env/Scripts/activate` in terminal inside project directory to activate the venv
