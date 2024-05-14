@@ -35,3 +35,4 @@ async def get_item(sku: str = Path(description="The SKU of the item you want to 
         return {"error": "item not found"}
     
     return {"item": item}
+
