@@ -1,13 +1,14 @@
 from fastapi import FastAPI, Request, Response
 from typing import Callable
-import time
 from dotenv import load_dotenv
 
-from routes.test.index import testRouter
-from routes.inventory.router import inventoryRouter
-from routes.suppliers.router import supplierRouter
+# import API routes
+from app.api.v1.test.index import testRouter
+from app.api.v1.inventory.router import inventoryRouter
+from app.api.v1.suppliers.router import supplierRouter
 
-from middleware.getAccessToken import getAccessToken
+
+from app.middleware.getAccessToken import getAccessToken
 
 # init FastAPI
 app = FastAPI()

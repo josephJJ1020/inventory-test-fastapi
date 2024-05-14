@@ -5,7 +5,7 @@ supplierRouter = APIRouter(prefix="/suppliers")
 
 @supplierRouter.get("/")
 def get_suppliers():
-    f = open("./data/suppliers/docs.json")
+    f = open("./app/data/suppliers/docs.json")
     data = json.load(f)
 
     f.close()
@@ -13,8 +13,8 @@ def get_suppliers():
     return {"suppliers": data}
 
 @supplierRouter.get('/{supplier_id}')
-def get_single_supplier(supplier_id: str = Path(None, description="The ID of the supplier you want to query")):
-    f = open('./data/suppliers/docs.json')
+def get_single_supplier(supplier_id: str):
+    f = open('./app/data/suppliers/docs.json')
     data = json.load(f)
 
     item = None
