@@ -9,7 +9,7 @@ from app.api.v1.suppliers.router import supplierRouter
 from app.api.v1.auth.router import authRouter
 
 
-from app.middleware.getAccessToken import getAccessToken
+# from app.middleware.getAccessToken import getAccessToken
 
 # init FastAPI
 app = FastAPI()
@@ -22,9 +22,9 @@ app.include_router(testRouter)
 app.include_router(inventoryRouter, prefix="/api/v1")
 app.include_router(supplierRouter, prefix="/api/v1")
 
-@app.middleware("http")
-async def getAccessTokenMiddleware(request: Request, call_next: Callable):
-    return await getAccessToken(request, call_next)
+# @app.middleware("http")
+# async def getAccessTokenMiddleware(request: Request, call_next: Callable):
+#     return await getAccessToken(request, call_next)
 
 @app.get("/")
 def home():

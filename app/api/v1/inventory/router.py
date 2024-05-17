@@ -1,7 +1,9 @@
-from fastapi import APIRouter, Path
+from fastapi import APIRouter, Request, Path, Depends
 import json
+from typing import Annotated
+from app.services.jwt_service import JWTService, User
 
-inventoryRouter = APIRouter(prefix="/inventory")
+inventoryRouter = APIRouter(prefix="/inventory",)
 
 @inventoryRouter.get("/")
 async def read_items():
@@ -20,9 +22,11 @@ async def read_items():
     return {"inventory_items": res}
 
 @inventoryRouter.get('/{sku}')
-async def get_item(sku: str = Path(description="The SKU of the item you want to query")):
+async def get_item(request: Request, current_user: Annotated[User, Depends(JWTService.get_current_user)], sku: str = Path(description="The SKU of the item you want to query")):
     f = open('./app/data/inventory/items.json')
     data = json.load(f)
+
+    print(current_user)
 
     item = None
 
