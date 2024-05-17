@@ -36,7 +36,7 @@ class JWTService:
             return None
     
     @staticmethod
-    async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    def get_current_user(token: str) -> User:
         credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",

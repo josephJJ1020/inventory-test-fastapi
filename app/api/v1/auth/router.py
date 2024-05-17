@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse
 
 from app.repositories.user_repository import UserRepository
 from app.services.jwt_service import JWTService, User
+from app.services.acl_service import GetAccessForUser
 
 class LoginParams(BaseModel):
     username: str
@@ -31,5 +32,5 @@ async def login(user: LoginParams):
     return {"accessToken": access_token}
 
 @authRouter.get('/me')
-async def get_me(current_user: Annotated[User, Depends(JWTService.get_current_user)]):
+async def get_me(current_user: Annotated[User, Depends(GetAccessForUser("auth.me"))]):
     return current_user
