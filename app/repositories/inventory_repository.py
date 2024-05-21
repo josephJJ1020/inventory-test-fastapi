@@ -34,3 +34,43 @@ class InventoryRepository:
             'supplier_name': single_product[7],
             'supplier_id': single_product[8]
             }
+    
+    @staticmethod
+    def update_by_id(id, name, description, cost, price, stocks):
+
+        single_product = None
+        
+        conn = connect_to_db()
+        
+        cursor: Cursor = conn.cursor()
+
+        query="""UPDATE products
+        SET name=%s, description=%s, cost=%s, price=%s, stocks=%s
+        WHERE ID=%s
+        """
+
+        updated = cursor.execute(query, (name, description, cost, price, stocks, id))
+
+        if updated:
+            getQuery = "select * from products where ID=%s"
+            cursor.execute(getQuery, [id])
+
+            single_product = cursor.fetchone()
+            single_product =  {
+            "ID": single_product[0], 
+            'name': single_product[1], 
+            'description': single_product[2], 
+            'cost': single_product[3],
+            'price': single_product[4],
+            'stocks': single_product[5],
+            'supplier_id': single_product[6],
+            'sku': single_product[7],
+            }
+
+        conn.commit()
+
+        cursor.close()
+        conn.close()
+
+
+        return single_product
