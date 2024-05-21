@@ -27,7 +27,7 @@ async def login(user: LoginParams):
         return JSONResponse({"error": "User not found", "status": 0}, 400)
 
 
-    access_token = JWTService.create_access_token({"username": valid_user["username"], "ID": valid_user["ID"], "role_id": valid_user["role_id"], "access": valid_user["access"]})
+    access_token = JWTService.create_access_token({"username": valid_user["username"], "ID": valid_user["ID"], "role_id": valid_user["role_id"]})
 
     return {"accessToken": access_token}
 

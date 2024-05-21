@@ -3,7 +3,7 @@ from MySQLdb import Connection
 
 from app.data.exceptions.DBException import DBException
 
-conn: Connection | None = None
+conn: Connection = None
 
 db_config = {
     'host': '127.0.0.1',

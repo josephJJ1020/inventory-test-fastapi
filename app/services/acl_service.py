@@ -25,8 +25,6 @@ class GetAccessForUser:
         # get user from DB
         user_from_db = UserRepository.find_user_from_token(decoded_user["ID"], decoded_user["username"])
 
-        print(user_from_db)
-
         if user_from_db and self.access in user_from_db["access"]:
             user = user_from_db
 
