@@ -45,6 +45,10 @@ class UserRepository:
 
          # connect to db
         conn = connect_to_db()
+
+        if not conn:
+            raise DBException
+
         cursor = conn.cursor()
 
         query = """

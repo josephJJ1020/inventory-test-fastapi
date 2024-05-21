@@ -1,8 +1,9 @@
 import MySQLdb
+from MySQLdb import Connection
 
 from app.data.exceptions.DBException import DBException
 
-conn = None
+conn: Connection | None = None
 
 db_config = {
     'host': '127.0.0.1',
@@ -14,7 +15,7 @@ db_config = {
 
 def connect_to_db():
     try:
-        conn = MySQLdb.connect(**db_config)
+        conn: Connection = MySQLdb.connect(**db_config)
         return conn
     except Exception as e:
         print(e)
